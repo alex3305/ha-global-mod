@@ -5,7 +5,7 @@
   "main": "global-mod.js",
   "scripts": {
     "lint": "npx eslint global-mod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "minify": "npx uglify-js global-mod.js -o dist/global-mod.min.js -m toplevel"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@eslint/js": "^9.2.0",
     "eslint": "^9.2.0",
-    "globals": "^15.2.0"
+    "globals": "^15.2.0",
+    "uglify-js": "^3.17.4"
   }
 }
